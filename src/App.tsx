@@ -1,26 +1,24 @@
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import UniversitiesList from './components/UniversitiesList/';
+import logo from './assets/images/logo.svg';
 
-function App() {
+
+export default function App (){
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <>
+      <div className="body" style={{height: '100vh', background: 'linear-gradient(0, #180A29 0%, #2A004F', padding: '5em auto'}}>
+        <img src={logo} alt=""/>
+          <div className='container' style={{width: '30em', padding: '10em 0'}}>
+            
+              <h1 style={{color: '#ffffff'}}>Busca Universidades</h1>
+              
+              <UniversitiesList message='teste'/>
+          </div>
+      </div>
+      
+      </>
+        
+    );
 }
-
-export default App;
